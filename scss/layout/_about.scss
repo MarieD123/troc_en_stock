@@ -1,0 +1,26 @@
+.about {
+    margin-top: 100px;
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 20px;
+
+    .pdg-image {
+        float: right;
+        width: 40%;
+        margin: -50px 20px 20px;
+        // position: absolute;
+        // right: 20px;
+        // top: -50px;
+    }
+
+    h3{
+        margin: 2rem 0;
+        font-size: 30pt;
+    }
+
+    .btn-rejoindre {
+        margin: 10px auto;
+        border: 0.75px solid rgb(133, 133, 133)
+    }
+
+}

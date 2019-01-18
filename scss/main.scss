@@ -1,0 +1,31 @@
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import
+  'vendors/normalize';
+
+@import
+  'base/base',
+  'base/typography';
+
+@import
+  'layout/navigation',
+  'layout/grid',
+  'layout/header',
+  'layout/footer',
+  'layout/fonctionnement',
+  'layout/temoignages',
+  'layout/magasins',
+  'layout/about',
+  'layout/forms';
+
+@import
+  'components/buttons';
+
+@import
+  'pages/home';
+
+

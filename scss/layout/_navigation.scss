@@ -1,0 +1,237 @@
+/////***** source code open pour la nav en responsive ***///// 
+
+//@import url(https://fonts.googleapis.com/css?family=Quicksand);
+.logo{
+    margin: 20px;
+}
+
+header nav {
+    text-transform: uppercase;
+}
+
+.midnightInner{
+    display: flex;
+}
+
+.midnightHeader {
+    .logo a{
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        background: url('../images/logo-nav.png') no-repeat;
+        background-size: cover;
+      
+    }   
+}
+.midnightHeader.transparent {
+    .logo a{
+        background: url('../images/logo-nav.png') no-repeat;
+    }   
+}
+.midnightHeader.white {
+    .logo a{
+        background: url('../../images/logo-nav-dark.png') no-repeat;  
+    }   
+}
+
+.midnightHeader.white {
+
+    background: none;
+
+    @media(min-width: $bp-large) {
+        // background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+background: rgba(255, 255, 255, 0.8);
+        li a {
+            color: black;
+        }
+    }
+    .logo a{
+        height: 70px;
+        width: 70px;
+        background: url('../images/logo-nav-dark.png') no-repeat;
+        background-size: cover;
+    }
+}
+
+.midnightHeader.transparent {
+    background: transparent;
+
+    li a {
+        color: transparent;
+    }
+}
+
+
+
+/////***** source code open pour la nav en responsive ***///// 
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+.b-a {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 6px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.menu-collapsed {
+    transition: all .25s;
+    position: fixed;
+    top: 10px;
+    right: 9px;
+    height: 36px;
+    width: 36px;
+    z-index: 1;
+    cursor: pointer;
+
+    ul {
+        transition: all 0s;
+        position: fixed;
+        left: -9000px;
+    }
+}
+
+.bar {
+    @extend .b-a;
+    position: fixed;
+    right: 12px;
+    top: 24px;
+
+    &:before {
+        @extend .b-a;
+        top: -8px;
+    }
+
+    &:after {
+        @extend .b-a;
+        top: 8px;
+    }
+
+    ////// /* cache le burger en desktop*///////
+
+    @media(min-width: $bp-large) {
+        display: none;
+    }
+}
+
+.bar,
+.bar::before,
+.bar::after {
+    box-shadow: 2px 2px 2px grey;
+}
+
+.b-a-expanded {
+    transition: all .25s;
+    top: -0px;
+}
+
+.menu-expanded {
+    transition: all .25s;
+    text-align: center;
+    line-height: 100px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    top: 0;
+    right: 0;
+    background-color: rgba(48, 48, 48, 0.712);
+
+    ul {
+        transition: all 0s;
+        position: relative;
+        left: 0;
+        z-index: 2;
+    }
+
+    a {
+        transition: all .15s;
+        text-decoration: none;
+        font-size: 2em;
+        padding: 5px;
+        color: #fff;
+        display: block;
+
+        &:hover {
+            background-color: rgba(white, .8);
+            transition: all .15s;
+            letter-spacing: 2px;
+            color: #333;
+            border: 1px solid rgba(255, 255, 255, .15);
+        }
+    }
+
+    .bar {
+        background-color: transparent;
+        transition: all .25s;
+
+        &:before {
+            @extend .b-a-expanded;
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            @extend .b-a-expanded;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// ************** fin du code de la nav en responsive ****************//////////
+
+
+@media(min-width: $bp-large) {
+    .navigation-1 {
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        z-index: 1;
+
+        .main-menu a {
+            text-decoration: none; 
+        }
+        .main-menu a:hover {
+            color: $yellow;
+        }
+    }
+}
+
+/*cache la nav 1 en responsive */
+.main-menu {
+    display: none;
+
+    @media(min-width: $bp-large) {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        // position: fixed;
+        margin: 0 auto;
+
+
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding: 20px 45px;
+        color: rgba(51, 51, 51, 0.5);
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        padding: 20px auto;
+        text-decoration: none;
+    }
+}

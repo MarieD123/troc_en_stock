@@ -1,0 +1,155 @@
+.temoignages {
+
+    margin: 0;
+    padding: 4rem 0;
+
+    h2 {
+        background: url('../images/nous-les-avons.png') center top no-repeat;
+        background-size: contain;
+
+        margin: 1rem 2rem;
+        padding-top: .8rem;
+        padding-bottom: 3rem;
+
+        font-size: 2.5rem;
+
+        @media (min-width: $bp-medium) {
+            padding-top: 2rem;
+            padding-bottom: 5rem;
+            font-size: 5rem;
+        }
+
+        @media (min-width: $bp-large) {
+            padding-top: 4rem;
+            font-size: 6.25rem;
+        }
+    }
+}
+
+
+
+
+body .carousel-indicators li {
+
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.carousel-item {
+
+    background: $yellow;
+    padding: 40px 0;
+    min-height: 250px;
+
+
+
+    @media (min-width: $bp-medium) {
+        min-height: 400px;
+    }
+
+    @media (min-width: $bp-large) {
+        min-height: 400px;
+    }
+}
+
+
+#bg-2 {
+    background: #a9b6be;
+}
+
+
+.carinfos {
+
+    margin: 130px 20% 20px;
+    position: relative;
+    z-index: 3;
+}
+
+@media (min-width: $bp-medium) {
+    #bg-1 {
+        background: url('../images/bg-jaune.jpg') 90% no-repeat;
+        background-size: cover;
+
+
+        .carinfos {
+            width: 50%;
+            margin: 130px 25% 20px;
+
+            &::before {
+                content: url('../images/guillemets1.png');
+                position: absolute;
+                left: -70px;
+            }
+
+            &::after {
+                content: url('../images/guillemets-2.png');
+                position: absolute;
+                right: -40px;
+                bottom: 20px;
+            }
+        }
+    }
+
+    #bg-2 {
+        background: url('../images/polaroid.png') 70% no-repeat;
+        background-size: cover;
+        color: white;
+
+        .carinfos {
+            width: 37%;
+            margin: 130px 30% 20px;
+
+            &::before {
+                content: url('../images/guillemets-blanc.png');
+                position: absolute;
+                left: -70px;
+            }
+
+            &::after {
+                content: url('../images/guillemets-banc-2.png');
+                position: absolute;
+                right: -50px;
+                bottom: 20px;
+            }
+        }
+    }
+
+    #bg-3 {
+        background: url('../images/écouteurs.png') center no-repeat;
+        background-size: cover;
+
+        .carinfos {
+            width: 30%;
+            margin: 130px 35% 20px;
+
+            &::before {
+                content: url('../images/guillemets1.png');
+                position: absolute;
+                left: -70px;
+            }
+
+            &::after {
+                content: url('../images/guillemets-2.png');
+                position: absolute;
+                right: -50px;
+                bottom: 20px;
+            }
+        }
+    }
+}
+
+
+.photo {
+    position: absolute;
+    top: -50px;
+    left: 10%;
+    max-height: 50%;
+}
+
+
+
+
+.carousel-inner {
+    overflow: visible;
+}

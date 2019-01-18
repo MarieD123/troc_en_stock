@@ -1,0 +1,50 @@
+.map {
+text-align: center;
+padding: 2rem 0;
+
+@media (min-width: $bp-medium){
+    padding: 4rem 0;
+}
+
+@media (min-width: $bp-large){
+    padding: 10rem 0;
+}
+
+    
+    
+
+    h2{
+        background: url('../images/ou-jaune.png') center top no-repeat;
+        background-size: contain;
+
+        margin: 1rem 2rem;
+        padding-top: 1.3rem ;
+
+        @media (min-width: $bp-medium){
+            padding-top: 3rem;
+        }
+
+        @media (min-width: $bp-large){
+            padding-top: 5rem;
+        }
+    }
+
+    #map {
+        margin: auto;
+        height: 400px;
+        max-width: 900px;
+        padding: 0 1rem;
+
+        @media (min-width: $bp-medium){
+        padding: 2rem 0 6rem 0;
+        height: 800px;
+        max-width: 900px;
+        }
+
+        @media (min-width: $bp-large){
+            padding: 2rem 0 6rem 0;
+            height: 1000px;
+            max-width: 900px;
+            }
+    }
+}

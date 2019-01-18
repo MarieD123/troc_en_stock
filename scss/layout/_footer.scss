@@ -1,0 +1,85 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: $light-gray;
+    font-size: .75rem;
+}
+
+.logo-footer {
+    flex-basis: 25%;
+
+    @media (min-width: $bp-medium) {
+        flex-basis: 20%
+    }
+
+    @media (min-width: $bp-large) {
+        flex-basis: 15%
+    }
+}
+
+.infos-footer {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    nav {
+        padding: 1rem 2rem;
+
+        @media (min-width: $bp-large) {
+            flex-basis: 50%;
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        li {
+            width: 35px;
+            height: 35px;
+            margin: 0 .5rem;
+
+            @media (min-width: $bp-medium) {
+                width: 60px;
+                height: 60px;
+                margin: 0 1rem;
+            }
+
+            @media (min-width: $bp-large) {
+                width: 70px;
+                height: 70px;
+                margin: 0 2rem;
+            }
+        }
+
+    }
+}
+
+.copyright {
+    text-align: center;
+    width: 70%;
+
+    @media (min-width: $bp-medium) {
+        width: 100%;
+    }
+
+    a {
+        color: $dark-gray;
+
+        &:hover {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}

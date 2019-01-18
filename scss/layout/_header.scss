@@ -1,0 +1,110 @@
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+.header-top {
+
+  .bg-header {
+    display: none;
+
+    @media (min-width: $bp-large) {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+    }
+  }
+
+  background: url('../images/bg-header-medium.jpg') center center no-repeat;
+  background-size: cover;
+  min-height: 660px;
+
+  @media (min-width: $bp-medium) {
+    min-height: 940px;
+  }
+
+  @media (min-width: $bp-large) {
+    background: none;
+  }
+
+  //   @media (min-width: $bp-large) {
+  //     background: url('../images/bg-header-test.png') top center no-repeat;
+  //     background-size: contain;
+  //     height: 1478px;
+  //   }
+
+  //   @media (min-width: $bp-xxl) {
+  //     background: url('../images/bg-header-test.png') top center no-repeat;
+  //     background-size: contain;
+  //     height: 1628px;
+  //   }
+
+
+
+
+  .ballon-detoure {
+    margin-left: 14%;
+    width: 21.7%;
+    height: auto;
+    position: absolute;
+    animation-duration: 5s;
+    visibility: hidden;
+
+    @media (min-width: $bp-large) {
+      visibility: visible;
+      animation-timing-function: linear;
+      animation-name: slidein;
+    }
+
+  }
+
+}
+
+// point infos a droite
+
+.infos {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-right: 15%;
+  margin-top: 100px;
+  color: right;
+
+  @media (min-width: $bp-large) {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-right: 15%;
+    margin-top: 150px;
+    color: right;
+  }
+
+  p {
+    padding-top: 20px;
+    font-family: $text-default;
+  }
+
+  .logo-header {
+
+    max-width: 60%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 70px;
+    padding-bottom: 150%;
+  }
+
+  h1,
+  p {
+    color: white;
+  }
+
+}

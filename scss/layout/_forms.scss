@@ -1,0 +1,116 @@
+.contact {
+    background: url('../images/bg-contact-small.jpg') top center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+
+    @media (min-width: $bp-large) {
+        background: url('../images/bg-contact-large.jpg') top center no-repeat;
+        background-size: cover;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } 
+
+
+    h2{
+        margin-right:50%;
+        padding: 120px 0;
+
+        @media (min-width: $bp-large) {
+            padding:  0;
+            margin: auto 0;
+            margin-right: 0;
+            flex-basis: 100%;
+            text-align: center;
+            padding-right: 22rem;
+        } 
+    }
+
+    .contact-contenu{
+
+        @media (min-width: $bp-large) { 
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        }
+    }
+
+    .infos-contact{
+        background: rgba(255, 255, 255, 0.8);
+        margin: 0 10%;
+        padding: 1rem;
+        padding-bottom: 5rem; 
+        text-align: center;
+
+        span{
+            font-size: 1.5rem;
+        }
+
+        @media (min-width: $bp-large) {
+            max-width: 920px;
+            max-height: 350px;
+            margin:  0 ;
+            margin-top: 5rem;
+            padding-bottom: 0;
+            padding-left: 40rem;
+
+        } 
+        
+    }
+
+    .formulaire-contact {
+        width: 60%;
+        margin: -50px auto 50px;
+        padding: 1rem;
+        background: $medium-gray;
+
+        @media (min-width: $bp-large) {
+            position: absolute;
+            top: 20px;
+             margin:  0 50px;
+            
+        } 
+
+       
+
+        h4 {
+            text-align: center;
+            padding: 1.2rem 0;
+            font-family: 'Quicksand Light', $text-default;
+            font-size: 1.75rem;
+            color: white;
+        }
+
+        input,
+        textarea {
+            display: block;
+            width: 80%;
+            margin: 2rem auto;
+            font-family: 'Quicksand Light', $text-default;
+            background: none;
+            border: none;
+            color: white;
+
+            &::placeholder {
+                font-size: 1rem;
+                color: white;
+                padding-left: 1rem;
+
+            }
+        }
+
+        input {
+            border-bottom: white solid 1px;
+        }
+
+        textarea {
+            border: 1px solid white;
+        }
+
+        button{
+            display: flex;
+            margin: 1rem auto;
+        }
+    }
+}

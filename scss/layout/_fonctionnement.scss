@@ -1,0 +1,192 @@
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+
+        article{
+            padding: 1rem 0;
+
+            @media (min-width: $bp-medium) {
+                padding: 3rem 0;
+            }
+    
+            @media (min-width: $bp-large) {
+                padding: 6rem 0;
+            }
+        }
+
+    h2 {
+        background: url('../images/comment-jaune.png') center top no-repeat;
+        background-size: contain;
+
+        margin: 1rem 2rem;
+        padding-top: 1.3rem;
+
+        @media (min-width: $bp-medium) {
+            padding-top: 3rem;
+        }
+
+        @media (min-width: $bp-large) {
+            padding-top: 6rem;
+        }
+
+    }
+
+    h3 {
+        margin: 0;
+
+        @media (min-width: $bp-medium) {
+            background: url('../images/surlignage.png') center 70% no-repeat;
+            background-size: 400px 50px;
+        }
+    }
+
+
+    ul {
+        li {
+            width: 50%;
+        }
+
+    }
+
+    .title-show {
+        font-size: 0;
+    }
+
+    .medium-show {
+        display: none;
+    }
+
+    figcaption {
+        width: 250px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: -150px;
+
+    }
+
+    .pola {
+        margin: 0 auto;
+        max-width: 250px;
+        height: auto;
+    }
+
+    h4 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-left: 3rem;
+        height: 56px;
+        margin-top: 5rem;
+
+    }
+
+    .number {
+
+        max-width: 250px;
+
+        img {
+            margin: -100px 0 0 -30px;
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        @media (min-width: $bp-large) {
+            // margin-right: -200px;
+        }
+    }
+
+    @media (min-width: $bp-medium) {
+        .nav-hide {
+            display: none;
+        }
+
+        .title-show {
+            font-size: 3rem;
+        }
+
+        .medium-show {
+            display: block;
+        }
+
+        .etapes {
+            display: flex;
+            flex-direction: row;
+        }
+
+        // mise en forme photo + titre et paragraphe
+        figure {
+            flex-basis: 33.33%;
+            padding: 1rem 0;
+        }
+
+        figcaption {
+
+            position: relative;
+            margin: 0 auto;
+            margin-top: -150px;
+
+            p {
+                // margin: 0 auto;
+                margin-left: 20px;
+                margin-top: -35px;
+            }
+        }
+
+        //    *************** ****************    
+    }
+
+    .nav-tabs .nav-link {
+        color: $dark-gray;
+    }
+
+    .nav-tabs .nav-link.active {
+        background: url('../images/surlignage-small.png') center no-repeat;
+        background-size: contain;
+    }
+
+}
+
+article.active {
+    background: $light-gray;
+}
+
+article.etape {
+    background: $gray;
+}
+
+
+@media (min-width: $bp-large) {
+
+    .title-show {
+        font-size: 3rem;
+    }
+
+    .medium-show {
+        display: block;
+    }
+
+    .etapes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    // mise en forme photo + titre et paragraphe************
+
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    figcaption {
+        position: relative;
+        margin-top: -150px;
+    }
+
+
+    figcaption p {
+        margin-left: 20px;
+    }
+
+    // **************************************
+
+}
